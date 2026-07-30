@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "note": "전문가(약사·EBM) 검수 대상 파일. 코드 수정 없이 이 파일만 편집하면 근거가 갱신됩니다.",
+    "schema_version": "0.1",
+    "reviewed_by": null
+  },
+  "claims": [
+    {
+      "id": "vitc_cold_prevention",
+      "statement": "고용량 비타민 C가 감기를 예방한다.",
+      "category": "IMMUNE",
+      "keywords": ["비타민c", "비타민 c", "vitamin c", "감기", "면역력", "아스코르브산"],
+      "keyword_groups": [
+        ["비타민c", "비타민 c", "vitamin c", "아스코르브산", "ascorbic"],
+        ["감기", "면역", "호흡기", "cold", "immune", "respiratory", "독감"]
+      ],
+      "supporting": [
+        {
+          "summary": "규칙적으로 비타민 C를 복용하면 감기의 '지속 기간'이 성인 약 8%, 어린이 약 14% 짧아졌다.",
+          "evidenceLevel": "SR_MA",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2013,
+          "citation": "Hemilä H, Chalker E. Vitamin C for preventing and treating the common cold. Cochrane Database Syst Rev. 2013.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23440782/"
+        },
+        {
+          "summary": "마라톤 선수·군인 등 극심한 신체 스트레스 집단에서는 감기 발생 위험이 약 절반으로 줄었다.",
+          "evidenceLevel": "SR_MA",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2013,
+          "citation": "Hemilä H, Chalker E. Cochrane Database Syst Rev. 2013 (subgroup: extreme physical stress).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23440782/"
+        }
+      ],
+      "opposing": [
+        {
+          "summary": "일반 인구집단에서는 규칙적 복용이 감기에 '걸리는 빈도' 자체를 줄이지 못했다. 즉 '예방' 효과는 확인되지 않았다.",
+          "evidenceLevel": "SR_MA",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2013,
+          "citation": "Hemilä H, Chalker E. Cochrane Database Syst Rev. 2013 (incidence in general population).",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23440782/"
+        },
+        {
+          "summary": "증상이 시작된 뒤 먹기 시작한 경우에는 기간·중증도에 일관된 효과가 없었다.",
+          "evidenceLevel": "RCT",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2013,
+          "citation": "Therapeutic trials pooled in Hemilä & Chalker, 2013.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/23440782/"
+        }
+      ]
+    },
+    {
+      "id": "if_weight_loss",
+      "statement": "간헐적 단식이 체중 감량에 효과적이다.",
+      "category": "WEIGHT",
+      "keywords": ["간헐적 단식", "간헐적단식", "intermittent fasting", "16:8", "단식", "시간제한 식사", "다이어트"],
+      "keyword_groups": [
+        ["간헐적 단식", "간헐적단식", "intermittent fasting", "시간제한", "16:8", "단식", "공복"],
+        ["체중", "감량", "다이어트", "비만", "살", "weight", "obesity", "diet"]
+      ],
+      "supporting": [
+        {
+          "summary": "여러 연구를 종합하면 간헐적 단식은 체중을 줄였는데, 그 효과는 '전체 칼로리를 줄이는 일반 다이어트'와 대체로 비슷한 수준이었다.",
+          "evidenceLevel": "SR_MA",
+          "journal": "JAMA Network Open",
+          "year": 2021,
+          "citation": "Meta-analyses of intermittent vs continuous energy restriction, 2021.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/33787890/"
+        }
+      ],
+      "opposing": [
+        {
+          "summary": "12주 무작위 시험(TREAT)에서 16:8 시간제한 식사군의 체중 감소는 하루 세 끼 대조군과 통계적으로 유의한 차이가 없었고, 제지방(근육)량 감소 우려가 관찰됐다.",
+          "evidenceLevel": "RCT",
+          "journal": "JAMA Internal Medicine",
+          "year": 2020,
+          "citation": "Lowe DA, et al. Effects of Time-Restricted Eating on Weight Loss (TREAT). JAMA Intern Med. 2020.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32986097/"
+        }
+      ]
+    },
+    {
+      "id": "omega3_cvd",
+      "statement": "오메가-3(생선기름) 보충제가 심혈관 질환을 예방한다.",
+      "category": "NUTRITION",
+      "keywords": ["오메가3", "오메가-3", "omega-3", "생선기름", "epa", "dha", "심혈관", "심장", "혈관"],
+      "keyword_groups": [
+        ["오메가3", "오메가-3", "omega-3", "omega 3", "생선기름", "어유", "epa", "dha", "fish oil"],
+        ["심혈관", "심장", "혈관", "콜레스테롤", "동맥", "cardiovascular", "heart", "cholesterol"]
+      ],
+      "supporting": [
+        {
+          "summary": "고용량 정제 EPA(icosapent ethyl)를 쓴 고위험 환자 대상 시험(REDUCE-IT)에서 주요 심혈관 사건이 약 25% 감소했다.",
+          "evidenceLevel": "RCT",
+          "journal": "New England Journal of Medicine",
+          "year": 2019,
+          "citation": "Bhatt DL, et al. Cardiovascular Risk Reduction with Icosapent Ethyl (REDUCE-IT). N Engl J Med. 2019.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415628/"
+        }
+      ],
+      "opposing": [
+        {
+          "summary": "일반적인 어유 보충제를 다룬 대규모 코크란 리뷰에서는 심혈관 사망·사건에 대한 효과가 거의 또는 전혀 없었다.",
+          "evidenceLevel": "SR_MA",
+          "journal": "Cochrane Database of Systematic Reviews",
+          "year": 2020,
+          "citation": "Abdelhamid AS, et al. Omega-3 fatty acids for the primary and secondary prevention of cardiovascular disease. Cochrane. 2020.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32114706/"
+        },
+        {
+          "summary": "일반 인구를 대상으로 한 대규모 RCT(VITAL)에서 하루 1g 오메가-3는 주요 심혈관 사건을 유의하게 줄이지 못했다.",
+          "evidenceLevel": "RCT",
+          "journal": "New England Journal of Medicine",
+          "year": 2019,
+          "citation": "Manson JE, et al. Marine n-3 Fatty Acids and Prevention of Cardiovascular Disease (VITAL). N Engl J Med. 2019.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30415637/"
+        }
+      ]
+    }
+  ]
+}

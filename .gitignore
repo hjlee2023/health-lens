@@ -1,0 +1,49 @@
+# ============================================================
+#  HealthLens - things that must never reach a public repo
+# ============================================================
+
+# --- Secrets --------------------------------------------------
+# backend/.env is where ANTHROPIC_API_KEY / NCBI_API_KEY go.
+# Only the .env.example template gets committed.
+.env
+backend/.env
+!.env.example
+!backend/.env.example
+
+# --- Python bytecode ------------------------------------------
+# co_filename in a .pyc bakes in the developer's absolute local path, Windows username included.
+__pycache__/
+*.pyc
+*.pyo
+
+# --- Virtual environments -------------------------------------
+.venv/
+venv/
+backend/.venv/
+
+# --- Runtime cache: exposes third parties ---------------------
+# Accumulates real YouTube videoIds plus the AI verdicts on those videos' claims,
+# which amounts to a record pointing at identifiable creators. Never commit it.
+# (Pure cache - deleting it breaks nothing; backend/cache.py rebuilds it.)
+backend/cache_store.json
+*.json.tmp
+
+# --- Abstract text cache --------------------------------------
+# Full PubMed abstracts, copyright held by each publisher. The repo keeps only pmids;
+# fetch the text yourself with `python rehydrate.py`. See backend/stance/data/README.md.
+backend/stance/data/_texts.jsonl
+backend/stance/data/_texts.jsonl.tmp
+
+# --- Training artifacts ---------------------------------------
+# model.joblib is committed: it's the shipped checkpoint (r3, 73 rows) and cannot be
+# regenerated from the current data - see the reproducibility section in backend/stance/README.md.
+# model_latest.joblib is excluded because train.py always rebuilds it from current data.
+backend/stance/model_latest.joblib
+
+# --- OS and editor cruft --------------------------------------
+Thumbs.db
+desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.swp

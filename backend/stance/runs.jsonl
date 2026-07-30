@@ -1,0 +1,9 @@
+{"round": "r0", "n_train": 41, "n_gold": 24, "accuracy": 0.8333, "macro_f1": 0.7994}
+{"round": "r1", "n_train": 55, "n_gold": 24, "accuracy": 0.8333, "macro_f1": 0.7994}
+{"round": "r2", "n_train": 55, "n_gold": 24, "accuracy": 0.875, "macro_f1": 0.8778}
+{"round": "r2_gold40", "n_train": 55, "n_gold": 40, "accuracy": 0.9, "macro_f1": 0.9049}
+{"round": "r3_fable", "n_train": 73, "n_gold": 40, "accuracy": 0.925, "macro_f1": 0.9282}
+{"round": "r4_fable", "n_train": 91, "n_gold": 40, "accuracy": 0.9, "macro_f1": 0.9024}
+{"round": "r3_restore", "n_train": 73, "n_gold": 40, "accuracy": 0.925, "macro_f1": 0.9282, "deployed": true}
+{"round": "r4_full", "n_train": 91, "n_gold": 40, "accuracy": 0.9, "macro_f1": 0.9024, "deployed": false}
+{"round": "pmid_migration_verify", "n_train": 91, "n_gold": 40, "accuracy": 0.9, "macro_f1": 0.9024, "deployed": false}

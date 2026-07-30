@@ -1,0 +1,24 @@
+# Don't leave line endings up to whatever core.autocrlf the cloner happens to have.
+
+# Default: anything detected as text is normalized to LF in the repo
+* text=auto
+
+# --- Batch files must be CRLF --------------------------------
+# The cmd.exe parser swallows characters in LF-only .bat files.
+# (Symptom: `for /f "tokens=5"` fails trying to run 'okens'.)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# --- Shell scripts must be LF --------------------------------
+*.sh text eol=lf
+
+# --- Binary: never convert line endings ----------------------
+# .joblib is a pickle, so any CRLF conversion corrupts the file.
+*.joblib binary
+*.pkl    binary
+*.png    binary
+*.jpg    binary
+*.ico    binary
+
+# --- Data files pinned to LF (hash reproducibility) -----------
+*.jsonl text eol=lf
